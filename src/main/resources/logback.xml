@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="kzt" class="ch.qos.logback.core.ConsoleAppender">　　　　　　
+        <encoder>
+            <pattern>slf4j:%level - %msg %n</pattern>
+        </encoder>
+    </appender>
+    <logger name="top" level="DEBUG"/>
+<!--    <logger name="top.fuguijar" level="DEBUG"/>-->
+    <root level="ERROR">
+        <appender-ref ref="kzt"/>
+    </root>
+</configuration>
